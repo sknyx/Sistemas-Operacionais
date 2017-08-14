@@ -1,10 +1,10 @@
 /**
 
 Disciplina: Sistemas Operacionais
-Nome: Carolina Ata√≠de de Assis
-Matr√≠cula: 161057600051
+Nome: Carolina AtaÌde de Assis
+MatrÌcula: 161057600051
 
-- Simula√ß√£o da Arquitetura de Von Neumann - 0 endere√ßos
+- SimulaÁ„o da Arquitetura de Von Neumann - 0 endereÁos
 
 **/
 
@@ -22,13 +22,13 @@ int main()
     scanf("%s", expr);
 
     int tam = confere(expr);
-    char pf_expr[tam]; /*express√£o p√≥s-fixada*/
+    char pf_expr[tam]; /*express„o pÛs-fixada*/
 
     printf("\nOrdem da expressao na pilha: ");
     In2Pos(expr, pf_expr);
 
 
-    /*imprime a simula√ß√£o*/
+    /*imprime a simulaÁ„o*/
 
     for (int i=0; i<tam-1; i++){
         c = pf_expr[i];
