@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1502416822 source:/home/aluno/Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/funções.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1502412850 /home/aluno/Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/pilha.h
+	<stdio.h>
+
+1502453289 source:/home/aluno/Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1502452797 source:/home/aluno/Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/pilha.c
+	<stdio.h>
+	"pilha.h"
+	<stdlib.h>
+
+1502416822 source:/media/aluno/CAROL/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/funções.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1502412850 /media/aluno/CAROL/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/pilha.h
+	<stdio.h>
+
+1502453288 source:/media/aluno/CAROL/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1502452796 source:/media/aluno/CAROL/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/pilha.c
+	<stdio.h>
+	"pilha.h"
+	<stdlib.h>
+
+1502416822 source:/media/aluno/CAROL/Sistemas Operacionais/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/funções.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1502412850 /media/aluno/CAROL/Sistemas Operacionais/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/pilha.h
+	<stdio.h>
+
+1502453288 source:/media/aluno/CAROL/Sistemas Operacionais/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1502452796 source:/media/aluno/CAROL/Sistemas Operacionais/LINUX - Arquitetura de Von Neumann (utilizando 0 endereços)- Carolina Ataíde/pilha.c
+	<stdio.h>
+	"pilha.h"
+	<stdlib.h>
+

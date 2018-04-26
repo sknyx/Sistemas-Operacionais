@@ -1,0 +1,72 @@
+#include <pthread.h>
+#include <stdio.h>
+#include <time.h>
+
+#define NUMBER_OF_THREADS 10
+
+int vetorPares[10], vetorThreads[10], i=0, j;
+
+
+void *NumAleatorio(void *threadid)
+{
+   int num, confere=0;
+   int tid;
+   tid = (int)threadid;
+
+while(confere!=1){
+	num = rand()%11;
+
+	if((i==0 && num%2==0) || (i>0 && vetorPares[i-1]==10 && num%2==0))
+	{
+	confere = 1;
+        vetorPares[i] = num;
+        vetorThreads[i] = tid;
+        i++;
+	}
+	else if(i>0 && num%2==0)
+	{
+		if(num == 2+(vetorPares[i-1]))
+		{
+		confere = 1;
+		vetorPares[i] = num;
+		vetorThreads[i] = tid;
+		i++;
+		}
+	}
+}
+    pthread_exit(NULL);
+}
+
+int main (int argc, char *argv[])
+{
+   srand(time(NULL));
+   pthread_t threads;
+   int rc;
+   int t;
+   for(t=0; t<NUMBER_OF_THREADS; t++){
+
+      rc = pthread_create(&threads, NULL, NumAleatorio, (void *)t);
+      if (rc){
+         printf("ERROR; return code from pthread_create() is %d\n", rc);
+         exit(-1);
+      }
+	pthread_join(threads,NULL);
+   }
+
+
+	printf("\n\nVetor de Numeros: ");
+	for(j=0; j<NUMBER_OF_THREADS; j++)
+	{
+	printf("[%d", vetorPares[j]);
+	printf("]\t");
+	}
+	printf("\n\nVetor de Threads: ");
+        for(j=0; j<NUMBER_OF_THREADS; j++)
+        { 
+        printf("[%d", vetorThreads[j]);
+        printf("]\t");
+        }
+
+   pthread_exit(NULL);
+
+}

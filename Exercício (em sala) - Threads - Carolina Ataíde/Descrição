@@ -1,0 +1,9 @@
+Aula do dia 15/09/2017
+
+Assunto; Threads
+
+Ex1: Criar um programa que crie 10 threads e cada uma imprima na tela hello world, imprima tbm o numero do processo que escreve na tela, ex:
+"hello world, processo 1"
+
+
+Ex2: Faça um programa que crie 10 threads, elas irão preencher um vetor com 10 numeros pares, porém cada uma irá gerar numeros aleatórios e a thread que encontrar o primeiro numero par que seja igual ao numero anteiror mais 2 preenche o vetor. 
